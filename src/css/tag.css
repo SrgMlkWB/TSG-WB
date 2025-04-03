@@ -1,0 +1,41 @@
+.tag{
+  height: 3rem;
+  width: 5.5rem;
+  background-color: (0, 0%, 15%, 0.5);
+  color: hsl(0, 0%, 100%);
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+  position: relative;
+  transition: all .2s;
+  cursor:pointer;
+}
+
+.tag:hover{
+  filter: contrast(2);
+}
+
+.tag.enabled {
+  background-color: #4CAF50; /* Couleur pour l'état actif */
+  color: #fff; /* Assurez-vous que le texte est lisible */
+  cursor: pointer; /* Change le curseur en pointeur */
+  border: solid .01rem rgb(124, 248, 128);
+}
+
+.tag.disabled:hover {
+background: linear-gradient(to bottom, #f1874190, #F18841);
+color: #ffffff;
+border: solid .01rem;
+} 
+
+/* .tag.disabled:hover {
+background: linear-gradient(to bottom, #f1874190, #F18841);
+color: #ffffff;
+}  */
+
+.tag.disabled {
+  background-color: #F18841;
+  color: #fff; /* Assurez-vous que le texte est lisible */
+  cursor: pointer; /* Change le curseur en interdit */
+  opacity: 1; /* Optionnel : ajoutez une opacité pour indiquer que c'est désactivé */
+}
+

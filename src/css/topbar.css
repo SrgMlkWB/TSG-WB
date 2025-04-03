@@ -1,0 +1,267 @@
+.topBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 6.5rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: linear-gradient(to top, #ee6e18, #F18841);
+  z-index: 2;
+  position: relative;
+}
+
+.topBar .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.topBar .wblogo {
+  width: 17rem;
+  position: absolute;
+  left: 5rem;
+  filter: drop-shadow(2px 2px 10px rgba(136, 48, 0, 0.5));
+}
+
+.topBar h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'GothamMedium' !important;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.topBar h1 span {
+  display: block;
+}
+
+.topBar h1 span:first-child {
+  margin-bottom: 0.2rem;
+}
+
+.connect {
+  position: absolute;
+  right: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+}
+
+.logoutIcon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 0.2s;
+  filter: drop-shadow(2px 2px 20px rgba(0, 0, 0, 1));
+}
+
+.logoutIcon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(2px 2px 20px rgba(0, 0, 0, 1));
+}
+
+/*TOP*/
+
+.topBar .top {
+  flex-grow: 1; /* Permet au titre de prendre l'espace disponible */
+  text-align: center;
+  font-family: 'GothamMedium' !important;
+  color: #fff;
+}
+
+/*TOP LEFT*/
+/* Ensure that the filters buttons are aligned at the top */
+
+.filtersButton {  
+  height: 4rem;
+  width: 10rem;
+  border-radius: 1.5rem; /* Rend le bouton plus arrondi */
+  padding: 10px 15px; /* Ajuste la taille du bouton */
+  border: none; /* Supprime la bordure par défaut */
+  background-color: #4CAF50; /* Couleur de fond par défaut */
+  color: #fff; /* Couleur du texte */
+  cursor: pointer; /* Change le curseur en pointeur */
+  display: flex;
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement si nécessaire */
+  padding: 1rem; /* Ajoute un peu d'espace autour */
+  margin-top: 2rem;
+  gap: 0.5rem;
+  transition: all 0.3s ease-in-out; /* Ajoute une transition pour le hover */
+}
+
+/* .filtersButton.enabled,
+.filtersButton:hover {
+  background: #F18841;
+}
+
+.filtersButton.enabled svg {
+  transform: rotate(90deg);
+}
+
+.filtersButton svg {
+  font-size: 1.3rem;
+  transition: all .2s;
+} */
+
+
+/*TOP CENTER*/
+
+
+/*TOP RIGHT*/
+
+/* .connect button {
+  display: flex;
+  gap: .5rem;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.connect button:hover {
+  color: #F18841;
+} */
+
+
+
+/*BOTTOM*/
+.topBar .bottom {
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 2rem;
+}
+
+
+/*BOTTOM LEFT*/
+
+.topBar .bottom {
+  background-color: hsla(0, 0%, 100%, 0.20);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 1rem;
+  border-radius: 5rem;
+  color: hsl(0, 0%, 100%);
+  transition: all .2s;
+  position: relative;
+}
+
+.topBar .bottom svg {
+  position: absolute;
+  pointer-events: none;
+}
+
+.topBar .bottom input {
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+  padding-left: 2rem;
+}
+
+.topBar .bottom input {
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+}
+
+.topBar .bottom {
+  filter: contrast(1.3);
+}
+
+/*BOTTOM RIGHT*/
+/* .topBar .bottom img {
+  height: 1.5rem;
+  opacity: 0.9;
+  pointer-events: none;
+  user-select: none;
+} */
+
+/* .profileImage {
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+} */
+
+
+
+
+.filtersButton.enabled {
+  background-color: #4CAF50; /* Couleur pour l'état actif */
+}
+
+.filtersButton.disabled {
+  background-color: #F18841; /* Couleur pour l'état désactivé */
+  cursor: pointer; /* Change le curseur en interdit */
+}
+
+@media screen and (min-width: 768px) {
+  .topBar h1 {
+    flex-direction: row;
+    gap: 0.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+
+  .topBar h1 span:first-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .topBar {
+    padding: 0.5rem;
+    height: 4.5rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .topBar .top {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .topBar h1 {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .topBar h1 span:first-child {
+    margin-bottom: 0.1rem;
+  }
+
+  .connect {
+    right: 0.5rem;
+    gap: 0.5rem;
+    position: absolute;
+  }
+
+  .connect .username {
+    display: none;
+  }
+
+  .logoutIcon {
+    font-size: 1.2rem;
+  }
+}

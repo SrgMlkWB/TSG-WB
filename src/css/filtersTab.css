@@ -1,0 +1,93 @@
+/* Style global du volet de filtres */
+.filtersWrapper {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filtersTab {
+  margin-top: -1rem;
+  width: 100%;
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: .5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* En-tête des filtres */
+.filtersHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+.filtersHeader h3 {
+  font-size: 1.2rem;
+  color: #F18841;
+}
+
+.closeButton {
+  background: transparent;
+  border: 1px solid #F18841;
+  color: #F18841;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.closeButton:hover {
+  background-color: #F18841;
+  color: #fff;
+}
+
+/* Barre de recherche */
+.searchContainer {
+  padding: 1rem;
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+  margin-left: 0;
+  margin-bottom: 1rem;
+}
+
+.searchInput {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 0.5rem;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Section des tags */
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+  margin-left: 0;
+}
+
+/* Style des tags */
+.tag {
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.tag:hover {
+  background-color: #F18841;
+  color: white;
+}
+
+.tag.selected {
+  background-color: #F18841;
+  color: white;
+}

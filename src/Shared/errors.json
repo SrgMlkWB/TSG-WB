@@ -1,0 +1,114 @@
+{
+  "errors": [
+    {
+      "id": "242",
+      "title": "ERROR 242 - GMU 3V3 UNDER VOLTAGE",
+      "description": {
+        "title": "Description",
+        "content": "Une fenêtre pop-up \"ERROR: UNDER VOLTAGE 3V3 GMU\" est apparue sur l'écran."
+      },
+      "analysis": {
+        "title": "Analyse",
+        "points": [
+          "Même si l'appareil est éteint et rallumé, l'erreur réapparaîtra",
+          "L'appareil est inutilisable et le problème ne peut pas être résolu à distance",
+          "L'appareil doit être envoyé au service après-vente WINBACK"
+        ]
+      },
+      "repair": {
+        "title": "Réparation",
+        "introduction": "Un composant d'alimentation doit être remplacé.",
+        "steps": [
+          "Ouvrir l'appareil. Dévisser les 4 vis avec un tournevis TORX 25mm",
+          "Allumer l'appareil",
+          "Vérifier la tension entre TP3 et TP5 sur la carte GMU"
+        ],
+        "conditions": [
+          {
+            "condition": "Si la tension est inférieure à 3V",
+            "checks": [
+              {
+                "title": "Vérifier les composants suivants",
+                "items": ["Condensateurs C36, C37, C38, C39"]
+              },
+              {
+                "title": "Si les composants sont OK",
+                "action": "remplacer le composant NCP1117ST33 (VR2) ou changer la carte GMU"
+              }
+            ]
+          },
+          {
+            "condition": "Si la tension est supérieure à 3V",
+            "checks": [
+              {
+                "title": "Vérifier les composants suivants",
+                "items": [
+                  "Résistances R129, R134",
+                  "Condensateur C80"
+                ]
+              },
+              {
+                "title": "Si les composants sont OK",
+                "action": "changer la carte GMU"
+              }
+            ]
+          }
+        ]
+      },
+      "filters": ["BACK3", "BACK4"]
+    },
+    {
+      "id": "240",
+      "title": "ERROR 240 - GMU 3V3 REF UNDER VOLTAGE",
+      "description": {
+        "title": "Description",
+        "content": "Erreur de tension de référence 3V3 sur le module GMU"
+      },
+      "analysis": {
+        "title": "Analyse",
+        "points": [
+          "Dysfonctionnement critique du système d'alimentation",
+          "L'appareil ne peut pas fonctionner correctement avec une tension de référence incorrecte",
+          "Une intervention technique est nécessaire"
+        ]
+      },
+      "repair": {
+        "title": "Réparation",
+        "steps": [
+          "Vérification des tensions de référence sur la carte GMU",
+          "Test des composants d'alimentation",
+          "Remplacement du module d'alimentation défectueux si nécessaire",
+          "Tests complets du système après réparation"
+        ]
+      },
+      "filters": ["BACK3", "BACK4"]
+    },
+    {
+      "id": "SYSTEM",
+      "title": "ERROR SYSTÈME - DÉFAILLANCE COMPOSANT",
+      "description": {
+        "title": "Description",
+        "content": "Erreur système indiquant une défaillance matérielle critique"
+      },
+      "analysis": {
+        "title": "Analyse",
+        "points": [
+          "Arrêt immédiat de l'appareil pour prévenir tout dommage supplémentaire",
+          "Risque potentiel pour la sécurité de l'utilisateur",
+          "Nécessite une intervention technique immédiate"
+        ]
+      },
+      "repair": {
+        "title": "Réparation",
+        "steps": [
+          "Diagnostic complet par le service technique",
+          "Identification du composant défaillant",
+          "Remplacement des pièces défectueuses",
+          "Tests de validation du système",
+          "Vérification de la sécurité avant remise en service"
+        ]
+      },
+      "filters": ["BACK3", "BACK4"]
+    }
+  ]
+}

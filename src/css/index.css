@@ -1,0 +1,31 @@
+body {
+  background-color: white;background-size: 110% 110%;
+  animation: shrinkBackground 3s forwards;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  z-index: 2;
+}
+
+html, body {
+  height: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@keyframes shrinkBackground {
+  from {
+    background-size: 200% 200%;
+  }
+  to {
+    background-size: 100% 100%;
+  }
+}

@@ -1,0 +1,58 @@
+ERREURS CRITIQUES DE L'APPLICATION
+
+1. ERROR 242 - GMU 3V3 UNDER VOLTAGE
+Description: 
+Une fenêtre pop-up "ERROR: UNDER VOLTAGE 3V3 GMU" est apparue sur l'écran.
+
+Analyse:
+- Même si l'appareil est éteint et rallumé, l'erreur réapparaîtra
+- L'appareil est inutilisable et le problème ne peut pas être résolu à distance
+- L'appareil doit être envoyé au service après-vente WINBACK
+
+Réparation:
+Un composant d'alimentation doit être remplacé.
+1. Ouvrir l'appareil. Dévisser les 4 vis avec un tournevis TORX 25mm
+2. Allumer l'appareil
+3. Vérifier la tension entre TP3 et TP5 sur la carte GMU
+
+Si la tension est inférieure à 3V:
+- Vérifier les composants suivants:
+  • Condensateurs C36, C37, C38, C39
+- Si les composants sont OK, remplacer le composant NCP1117ST33 (VR2) ou changer la carte GMU
+
+Si la tension est supérieure à 3V:
+- Vérifier les composants suivants:
+  • Résistances R129, R134
+  • Condensateur C80
+- Si les composants sont OK, changer la carte GMU
+
+2. ERROR 240 - GMU 3V3 REF UNDER VOLTAGE
+Description:
+Erreur de tension de référence 3V3 sur le module GMU
+
+Analyse:
+- Dysfonctionnement critique du système d'alimentation
+- L'appareil ne peut pas fonctionner correctement avec une tension de référence incorrecte
+- Une intervention technique est nécessaire
+
+Réparation:
+1. Vérification des tensions de référence sur la carte GMU
+2. Test des composants d'alimentation
+3. Remplacement du module d'alimentation défectueux si nécessaire
+4. Tests complets du système après réparation
+
+3. ERROR SYSTÈME - DÉFAILLANCE COMPOSANT
+Description:
+Erreur système indiquant une défaillance matérielle critique
+
+Analyse:
+- Arrêt immédiat de l'appareil pour prévenir tout dommage supplémentaire
+- Risque potentiel pour la sécurité de l'utilisateur
+- Nécessite une intervention technique immédiate
+
+Réparation:
+1. Diagnostic complet par le service technique
+2. Identification du composant défaillant
+3. Remplacement des pièces défectueuses
+4. Tests de validation du système
+5. Vérification de la sécurité avant remise en service
